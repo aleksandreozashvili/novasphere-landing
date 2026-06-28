@@ -8,8 +8,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-  <script type="module" crossorigin src="/assets/index-H8bH-Wn7.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-rOJtm7ta.css">
+  <script type="module" crossorigin src="/assets/index-BE1tGe0m.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-DS2l7CMG.css">
 </head>
 <body>
   <!-- Ambient Glow Backgrounds -->
@@ -32,15 +32,24 @@
       </a>
 
       <ul class="nav-links">
-        <li><a href="#features" class="nav-link">პლატფორმა</a></li>
-        <li><a href="#analytics" class="nav-link">ნეირონული ძრავი</a></li>
-        <li><a href="#pricing" class="nav-link">ტარიფები</a></li>
-        <li><a href="#testimonials" class="nav-link">კლიენტები</a></li>
+        <li><a href="#features" class="nav-link" data-i18n="nav.platform">პლატფორმა</a></li>
+        <li><a href="#analytics" class="nav-link" data-i18n="nav.engine">ნეირონული ძრავი</a></li>
+        <li><a href="#pricing" class="nav-link" data-i18n="nav.pricing">ტარიფები</a></li>
+        <li><a href="#testimonials" class="nav-link" data-i18n="nav.customers">კლიენტები</a></li>
       </ul>
 
       <div class="nav-actions">
-        <a href="#cta" class="btn btn-ghost" id="nav-login-btn">შესვლა</a>
-        <a href="#cta" class="btn btn-primary glow-effect" id="nav-cta-btn">დაწყება <span class="arrow">→</span></a>
+        <!-- Language Switcher -->
+        <div class="lang-switcher glass-panel">
+          <button class="lang-btn active" data-lang="ka">KA</button>
+          <span class="lang-divider">/</span>
+          <button class="lang-btn" data-lang="ru">RU</button>
+          <span class="lang-divider">/</span>
+          <button class="lang-btn" data-lang="en">EN</button>
+        </div>
+
+        <a href="#cta" class="btn btn-ghost" id="nav-login-btn" data-i18n="nav.signin">შესვლა</a>
+        <a href="#cta" class="btn btn-primary glow-effect" id="nav-cta-btn" data-i18n="nav.start">დაწყება <span class="arrow">→</span></a>
       </div>
 
       <button class="mobile-toggle" id="nav-toggle" aria-label="მენიუს გახსნა">
@@ -51,12 +60,17 @@
 
   <!-- Mobile Menu -->
   <div class="mobile-menu glass-panel" id="mobile-menu">
-    <a href="#features" class="mobile-link">პლატფორმა</a>
-    <a href="#analytics" class="mobile-link">ნეირონული ძრავი</a>
-    <a href="#pricing" class="mobile-link">ტარიფები</a>
-    <a href="#testimonials" class="mobile-link">კლიენტები</a>
+    <div class="mobile-lang-switcher">
+      <button class="lang-btn active" data-lang="ka">KA</button>
+      <button class="lang-btn" data-lang="ru">RU</button>
+      <button class="lang-btn" data-lang="en">EN</button>
+    </div>
+    <a href="#features" class="mobile-link" data-i18n="nav.platform">პლატფორმა</a>
+    <a href="#analytics" class="mobile-link" data-i18n="nav.engine">ნეირონული ძრავი</a>
+    <a href="#pricing" class="mobile-link" data-i18n="nav.pricing">ტარიფები</a>
+    <a href="#testimonials" class="mobile-link" data-i18n="nav.customers">კლიენტები</a>
     <div class="mobile-actions">
-      <a href="#cta" class="btn btn-primary w-full">დაწყება</a>
+      <a href="#cta" class="btn btn-primary w-full" data-i18n="nav.start">დაწყება <span class="arrow">→</span></a>
     </div>
   </div>
 
@@ -67,37 +81,37 @@
         <div class="hero-content">
           <div class="badge fade-in-up">
             <span class="badge-dot"></span>
-            <span class="badge-text">სიახლე: NovaSphere 3.0 ნეირონული ბირთვი</span>
+            <span class="badge-text" data-i18n="hero.badge">სიახლე: NovaSphere 3.0 ნეირონული ბირთვი</span>
           </div>
-          <h1 class="hero-title fade-in-up delay-1">
+          <h1 class="hero-title fade-in-up delay-1" data-i18n="hero.title">
             ავტონომიური <span class="gradient-text">AI ქლაუდი</span> თანამედროვე ბიზნესისთვის
           </h1>
-          <p class="hero-subtitle fade-in-up delay-2">
+          <p class="hero-subtitle fade-in-up delay-2" data-i18n="hero.subtitle">
             გაათავისუფლეთ ბიზნესი ოპერაციული შეფერხებებისგან თვითაღდგენადი ქლაუდ ინფრასტრუქტურითა და რეალურ დროში მომუშავე პროგნოზული ანალიტიკით.
           </p>
           <div class="hero-cta fade-in-up delay-3">
-            <a href="#cta" class="btn btn-primary btn-lg glow-effect" id="hero-start-btn">
+            <a href="#cta" class="btn btn-primary btn-lg glow-effect" id="hero-start-btn" data-i18n="hero.cta.sandbox">
               უფასო სანდბოქსის გაშვება
               <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
             </a>
-            <a href="#analytics" class="btn btn-secondary btn-lg" id="hero-demo-btn">
+            <a href="#analytics" class="btn btn-secondary btn-lg" id="hero-demo-btn" data-i18n="hero.cta.demo">
               ცოცხალი დემო
             </a>
           </div>
           <div class="hero-metrics fade-in-up delay-4">
             <div class="metric-item">
               <span class="metric-value counter" data-target="99.99">0</span><span>%</span>
-              <span class="metric-label">უწყვეტობის SLA</span>
+              <span class="metric-label" data-i18n="metrics.sla">უწყვეტობის SLA</span>
             </div>
             <div class="metric-divider"></div>
             <div class="metric-item">
               <span class="metric-value counter" data-target="10">0</span><span>x</span>
-              <span class="metric-label">სწრაფი მოთხოვნები</span>
+              <span class="metric-label" data-i18n="metrics.speed">სწრაფი მოთხოვნები</span>
             </div>
             <div class="metric-divider"></div>
             <div class="metric-item">
               <span class="metric-value counter" data-target="450">0</span><span>+</span>
-              <span class="metric-label">კორპორატიული კლიენტი</span>
+              <span class="metric-label" data-i18n="metrics.clients">კორპორატიული კლიენტი</span>
             </div>
           </div>
         </div>
@@ -108,7 +122,7 @@
               <div class="window-controls">
                 <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
               </div>
-              <span class="window-title">NovaSphere ნეირონული ანალიტიკა — Live კლასტერი</span>
+              <span class="window-title" data-i18n="mockup.title">NovaSphere ნეირონული ანალიტიკა — Live კლასტერი</span>
             </div>
             <div class="card-body">
               <img src="/assets/hero_dashboard.png" alt="NovaSphere AI Analytics Dashboard" class="hero-dashboard-img">
@@ -116,15 +130,15 @@
             <div class="floating-badge badge-top-right glass-panel pulse-anim">
               <div class="icon-pulse green"></div>
               <div>
-                <div class="stat-mini">კლასტერის ეფექტურობა</div>
-                <div class="stat-num">+94.8% ოპტ</div>
+                <div class="stat-mini" data-i18n="mockup.efficiency.label">კლასტერის ეფექტურობა</div>
+                <div class="stat-num" data-i18n="mockup.efficiency.val">+94.8% ოპტ</div>
               </div>
             </div>
             <div class="floating-badge badge-bottom-left glass-panel">
               <svg viewBox="0 0 24 24" width="20" height="20" stroke="#06b6d4" stroke-width="2" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path></svg>
               <div>
-                <div class="stat-mini">კიბერ-დაცვა</div>
-                <div class="stat-num cyan-text">ნულოვანი შეღწევა</div>
+                <div class="stat-mini" data-i18n="mockup.shield.label">კიბერ-დაცვა</div>
+                <div class="stat-num cyan-text" data-i18n="mockup.shield.val">ნულოვანი შეღწევა</div>
               </div>
             </div>
           </div>
@@ -135,7 +149,7 @@
     <!-- Trusted Logos Section -->
     <section class="trusted-section">
       <div class="container">
-        <p class="trusted-label">გამოიყენება მსოფლიოს მოწინავე ტექნოლოგიური ლიდერების მიერ</p>
+        <p class="trusted-label" data-i18n="trusted.label">გამოიყენება მსოფლიოს მოწინავე ტექნოლოგიური ლიდერების მიერ</p>
         <div class="logo-grid">
           <span class="client-logo">AETHERIA</span>
           <span class="client-logo">QUANTUM<span class="font-light">LABS</span></span>
@@ -151,9 +165,9 @@
     <section class="section features" id="features">
       <div class="container">
         <div class="section-header text-center">
-          <span class="subheading">არქიტექტურა</span>
-          <h2 class="section-title">შექმნილია <span class="gradient-text">ჰიპერ-მასშტაბირებისთვის</span></h2>
-          <p class="section-desc">ჩვენი პლატფორმა აერთიანებს განაწილებულ კვანტურ გამოთვლებსა და ავტომატურ ნეირონულ აღდგენას.</p>
+          <span class="subheading" data-i18n="features.subheading">არქიტექტურა</span>
+          <h2 class="section-title" data-i18n="features.title">შექმნილია <span class="gradient-text">ჰიპერ-მასშტაბირებისთვის</span></h2>
+          <p class="section-desc" data-i18n="features.desc">ჩვენი პლატფორმა აერთიანებს განაწილებულ კვანტურ გამოთვლებსა და ავტომატურ ნეირონულ აღდგენას.</p>
         </div>
 
         <div class="features-grid">
@@ -161,24 +175,24 @@
             <div class="feature-icon purple-glow">
               <svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" stroke-width="2" fill="none"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg>
             </div>
-            <h3 class="feature-title">განაწილებული ნეირონული ქსელი</h3>
-            <p class="feature-desc">გამოთვლითი რესურსების დინამიური განაწილება, რომელიც წინასწარ საზღვრავს დატვირთვას და წამებში უზრუნველყოფს მასშტაბირებას.</p>
+            <h3 class="feature-title" data-i18n="feat1.title">განაწილებული ნეირონული ქსელი</h3>
+            <p class="feature-desc" data-i18n="feat1.desc">გამოთვლითი რესურსების დინამიური განაწილება, რომელიც წინასწარ საზღვრავს დატვირთვას და წამებში უზრუნველყოფს მასშტაბირებას.</p>
           </div>
 
           <div class="feature-card glass-card hover-lift">
             <div class="feature-icon cyan-glow">
               <svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" stroke-width="2" fill="none"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
             </div>
-            <h3 class="feature-title">კვანტური უსაფრთხოების ფარი</h3>
-            <p class="feature-desc">ანომალიების ავტონომიური ამოცნობა და არასანქცირებული წვდომის მყისიერი ბლოკირება ნულოვანი დაყოვნებით.</p>
+            <h3 class="feature-title" data-i18n="feat2.title">კვანტური უსაფრთხოების ფარი</h3>
+            <p class="feature-desc" data-i18n="feat2.desc">ანომალიების ავტონომიური ამოცნობა და არასანქცირებული წვდომის მყისიერი ბლოკირება ნულოვანი დაყოვნებით.</p>
           </div>
 
           <div class="feature-card glass-card hover-lift">
             <div class="feature-icon pink-glow">
               <svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" stroke-width="2" fill="none"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
             </div>
-            <h3 class="feature-title">თვითაღდგენადი პროცესები</h3>
-            <p class="feature-desc">უწყვეტი მონიტორინგი ავტომატურად ანაცვლებს დაზიანებულ კვანძებს პაკეტების დაკარგვისა და შეფერხების გარეშე.</p>
+            <h3 class="feature-title" data-i18n="feat3.title">თვითაღდგენადი პროცესები</h3>
+            <p class="feature-desc" data-i18n="feat3.desc">უწყვეტი მონიტორინგი ავტომატურად ანაცვლებს დაზიანებულ კვანძებს პაკეტების დაკარგვისა და შეფერხების გარეშე.</p>
           </div>
         </div>
       </div>
@@ -188,9 +202,9 @@
     <section class="section analytics-showcase" id="analytics">
       <div class="container showcase-grid">
         <div class="showcase-content">
-          <span class="subheading">ავტონომიური დაცვა</span>
-          <h2 class="section-title">Zero-Trust უსაფრთხოება მართული <span class="gradient-text">AI ბირთვის მიერ</span></h2>
-          <p class="section-desc">
+          <span class="subheading" data-i18n="analytics.subheading">ავტონომიური დაცვა</span>
+          <h2 class="section-title" data-i18n="analytics.title">Zero-Trust უსაფრთხოება მართული <span class="gradient-text">AI ბირთვის მიერ</span></h2>
+          <p class="section-desc" data-i18n="analytics.desc">
             ტრადიციული სისტემები რეაგირებენ შეტევის შემდეგ. NovaSphere მუდმივად აანალიზებს ქსელურ ნაკადებს საფრთხის წინასწარ გასანეიტრალებლად.
           </p>
 
@@ -198,22 +212,22 @@
             <div class="check-item">
               <div class="check-icon">✓</div>
               <div>
-                <strong>პროგნოზული საფრთხეების მოდელირება</strong>
-                <p>წამში მილიონობით თავდასხმის სცენარის სიმულაცია.</p>
+                <strong data-i18n="check1.title">პროგნოზული საფრთხეების მოდელირება</strong>
+                <p data-i18n="check1.desc">წამში მილიონობით თავდასხმის სცენარის სიმულაცია.</p>
               </div>
             </div>
             <div class="check-item">
               <div class="check-icon">✓</div>
               <div>
-                <strong>მილიწამებში იზოლირება</strong>
-                <p>საეჭვო მიკრო-სერვისების ავტომატური გადაყვანა კარანტინში.</p>
+                <strong data-i18n="check2.title">მილიწამებში იზოლირება</strong>
+                <p data-i18n="check2.desc">საეჭვო მიკრო-სერვისების ავტომატური გადაყვანა კარანტინში.</p>
               </div>
             </div>
             <div class="check-item">
               <div class="check-icon">✓</div>
               <div>
-                <strong>SOC2 Type II სერტიფიცირება</strong>
-                <p>საერთაშორისო საბანკო უსაფრთხოების სტანდარტების შესაბამისი დაშიფვრა.</p>
+                <strong data-i18n="check3.title">SOC2 Type II სერტიფიცირება</strong>
+                <p data-i18n="check3.desc">საერთაშორისო საბანკო უსაფრთხოების სტანდარტების შესაბამისი დაშიფვრა.</p>
               </div>
             </div>
           </div>
@@ -231,14 +245,14 @@
     <!-- Interactive ROI Calculator Section -->
     <section class="section roi-section glass-panel">
       <div class="container text-center">
-        <span class="subheading">ინტერაქტიული სიმულატორი</span>
-        <h2 class="section-title">გამოთვალეთ ქლაუდ ხარჯების <span class="gradient-text">დანაზოგი</span></h2>
-        <p class="section-desc">შეაფასეთ თქვენი ყოველწლიური დანაზოგი NovaSphere-ის ავტონომიურ მარშრუტიზაციაზე გადასვლით.</p>
+        <span class="subheading" data-i18n="roi.subheading">ინტერაქტიული სიმულატორი</span>
+        <h2 class="section-title" data-i18n="roi.title">გამოთვალეთ ქლაუდ ხარჯების <span class="gradient-text">დანაზოგი</span></h2>
+        <p class="section-desc" data-i18n="roi.desc">შეაფასეთ თქვენი ყოველწლიური დანაზოგი NovaSphere-ის ავტონომიურ მარშრუტიზაციაზე გადასვლით.</p>
 
         <div class="roi-calculator glass-card max-w-2xl mx-auto">
           <div class="slider-group">
             <div class="slider-header">
-              <label for="roi-slider">მიმდინარე თვიური ქლაუდ ხარჯი ($USD)</label>
+              <label for="roi-slider" data-i18n="roi.slider.label">მიმდინარე თვიური ქლაუდ ხარჯი ($USD)</label>
               <span class="slider-value" id="spend-display">$25,000</span>
             </div>
             <input type="range" id="roi-slider" min="5000" max="100000" step="1000" value="25000" class="custom-slider">
@@ -251,11 +265,11 @@
 
           <div class="roi-results grid-2">
             <div class="result-box">
-              <span class="result-label">სავარაუდო თვიური დანაზოგი</span>
+              <span class="result-label" data-i18n="roi.monthly.label">სავარაუდო თვიური დანაზოგი</span>
               <span class="result-num cyan-text" id="monthly-savings">$10,500</span>
             </div>
             <div class="result-box highlight-box">
-              <span class="result-label">წლიური ეფექტი (ROI)</span>
+              <span class="result-label" data-i18n="roi.annual.label">წლიური ეფექტი (ROI)</span>
               <span class="result-num gradient-text" id="annual-savings">$126,000</span>
             </div>
           </div>
@@ -267,17 +281,17 @@
     <section class="section pricing" id="pricing">
       <div class="container">
         <div class="section-header text-center">
-          <span class="subheading">გამჭვირვალე ტარიფები</span>
-          <h2 class="section-title">მოქნილი გეგმები ნებისმიერი <span class="gradient-text">მასშტაბისთვის</span></h2>
-          <p class="section-desc">მარტივად გაზარდეთ რესურსები საწყისი პროტოტიპებიდან გლობალურ კლასტერებამდე.</p>
+          <span class="subheading" data-i18n="pricing.subheading">გამჭვირვალე ტარიფები</span>
+          <h2 class="section-title" data-i18n="pricing.title">მოქნილი გეგმები ნებისმიერი <span class="gradient-text">მასშტაბისთვის</span></h2>
+          <p class="section-desc" data-i18n="pricing.desc">მარტივად გაზარდეთ რესურსები საწყისი პროტოტიპებიდან გლობალურ კლასტერებამდე.</p>
 
           <div class="billing-toggle">
-            <span class="billing-label active" id="monthly-label">თვიური</span>
+            <span class="billing-label active" id="monthly-label" data-i18n="pricing.monthly">თვიური</span>
             <label class="switch" for="pricing-toggle-checkbox">
               <input type="checkbox" id="pricing-toggle-checkbox">
               <span class="slider round"></span>
             </label>
-            <span class="billing-label" id="annual-label">წლიური <span class="discount-badge">დაზოგე 20%</span></span>
+            <span class="billing-label" id="annual-label" data-i18n="pricing.annual">წლიური <span class="discount-badge">დაზოგე 20%</span></span>
           </div>
         </div>
 
@@ -285,55 +299,55 @@
           <!-- Starter Tier -->
           <div class="pricing-card glass-card">
             <div class="tier-name">Developer</div>
-            <p class="tier-desc">იდეალურია AI მოდელების ტესტირებისა და სწრაფი პროტოტიპებისთვის.</p>
+            <p class="tier-desc" data-i18n="tier1.desc">იდეალურია AI მოდელების ტესტირებისა და სწრაფი პროტოტიპებისთვის.</p>
             <div class="tier-price">
               <span class="currency">$</span>
               <span class="amount price-val" data-monthly="49" data-annual="39">49</span>
-              <span class="period">/თვე</span>
+              <span class="period" data-i18n="period.mo">/თვე</span>
             </div>
             <ul class="tier-features">
-              <li>✓ 5-მდე ავტონომიური კვანძი</li>
-              <li>✓ 100GB საცავი</li>
-              <li>✓ სტანდარტული დაცვა</li>
-              <li>✓ თემის მხარდაჭერა</li>
+              <li data-i18n="tier1.feat1">✓ 5-მდე ავტონომიური კვანძი</li>
+              <li data-i18n="tier1.feat2">✓ 100GB საცავი</li>
+              <li data-i18n="tier1.feat3">✓ სტანდარტული დაცვა</li>
+              <li data-i18n="tier1.feat4">✓ თემის მხარდაჭერა</li>
             </ul>
-            <a href="#cta" class="btn btn-secondary w-full select-plan-btn" data-plan="Developer">უფასო ტესტირება</a>
+            <a href="#cta" class="btn btn-secondary w-full select-plan-btn" data-plan="Developer" data-i18n="tier1.btn">უფასო ტესტირება</a>
           </div>
 
           <!-- Pro Tier (Popular) -->
           <div class="pricing-card glass-card popular-card">
-            <div class="popular-tag">ყველაზე მოთხოვნადი</div>
+            <div class="popular-tag" data-i18n="popular.tag">ყველაზე მოთხოვნადი</div>
             <div class="tier-name">Enterprise Pro</div>
-            <p class="tier-desc">შექმნილია მაღალი დატვირთვის პროდუქციული სისტემებისა და გუნდებისთვის.</p>
+            <p class="tier-desc" data-i18n="tier2.desc">შექმნილია მაღალი დატვირთვის პროდუქციული სისტემებისა და გუნდებისთვის.</p>
             <div class="tier-price">
               <span class="currency">$</span>
               <span class="amount price-val gradient-text" data-monthly="199" data-annual="159">199</span>
-              <span class="period">/თვე</span>
+              <span class="period" data-i18n="period.mo">/თვე</span>
             </div>
             <ul class="tier-features">
-              <li>✓ ულიმიტო კვანძები</li>
-              <li>✓ 2TB NVMe საცავი</li>
-              <li>✓ კვანტური ფარი + თვითაღდგენა</li>
-              <li>✓ 24/7 მხარდაჭერა და SLA</li>
-              <li>✓ ინდივიდუალური მარშრუტიზაცია</li>
+              <li data-i18n="tier2.feat1">✓ ულიმიტო კვანძები</li>
+              <li data-i18n="tier2.feat2">✓ 2TB NVMe საცავი</li>
+              <li data-i18n="tier2.feat3">✓ კვანტური ფარი + თვითაღდგენა</li>
+              <li data-i18n="tier2.feat4">✓ 24/7 მხარდაჭერა და SLA</li>
+              <li data-i18n="tier2.feat5">✓ ინდივიდუალური მარშრუტიზაცია</li>
             </ul>
-            <a href="#cta" class="btn btn-primary glow-effect w-full select-plan-btn" data-plan="Enterprise Pro">პაკეტის გააქტიურება</a>
+            <a href="#cta" class="btn btn-primary glow-effect w-full select-plan-btn" data-plan="Enterprise Pro" data-i18n="tier2.btn">პაკეტის გააქტიურება</a>
           </div>
 
           <!-- Custom Tier -->
           <div class="pricing-card glass-card">
             <div class="tier-name">Sovereign Cluster</div>
-            <p class="tier-desc">გამოყოფილი ინფრასტრუქტურა ინდივიდუალური უსაფრთხოების ნორმებით.</p>
+            <p class="tier-desc" data-i18n="tier3.desc">გამოყოფილი ინფრასტრუქტურა ინდივიდუალური უსაფრთხოების ნორმებით.</p>
             <div class="tier-price">
-              <span class="amount custom-price">ინდივიდ.</span>
+              <span class="amount custom-price" data-i18n="price.custom">ინდივიდ.</span>
             </div>
             <ul class="tier-features">
-              <li>✓ გამოყოფილი Bare-Metal სერვერები</li>
-              <li>✓ ულიმიტო კვანტური საცავი</li>
-              <li>✓ On-Premise იზოლირებული ქსელი</li>
-              <li>✓ პირადი AI არქიტექტორი</li>
+              <li data-i18n="tier3.feat1">✓ გამოყოფილი Bare-Metal სერვერები</li>
+              <li data-i18n="tier3.feat2">✓ ულიმიტო კვანტური საცავი</li>
+              <li data-i18n="tier3.feat3">✓ On-Premise იზოლირებული ქსელი</li>
+              <li data-i18n="tier3.feat4">✓ პირადი AI არქიტექტორი</li>
             </ul>
-            <a href="#cta" class="btn btn-secondary w-full select-plan-btn" data-plan="Sovereign">დაგვიკავშირდით</a>
+            <a href="#cta" class="btn btn-secondary w-full select-plan-btn" data-plan="Sovereign" data-i18n="tier3.btn">დაგვიკავშირდით</a>
           </div>
         </div>
       </div>
@@ -343,31 +357,31 @@
     <section class="section testimonials" id="testimonials">
       <div class="container">
         <div class="section-header text-center">
-          <span class="subheading">შეფასებები</span>
-          <h2 class="section-title">აღიარებულია ტექნოლოგიური ლიდერების მიერ</h2>
+          <span class="subheading" data-i18n="testi.subheading">შეფასებები</span>
+          <h2 class="section-title" data-i18n="testi.title">აღიარებულია ტექნოლოგიური ლიდერების მიერ</h2>
         </div>
 
         <div class="testimonials-grid">
           <div class="testi-card glass-card">
             <div class="stars">★★★★★</div>
-            <p class="testi-quote">"NovaSphere-მა პირველსავე თვეს 42%-ით შეგვიმცირა AWS-ის ხარჯი და უპრობლემოდ გაუძლო შავი პარასკევის 3x დატვირთვას ინჟინრების ჩარევის გარეშე."</p>
+            <p class="testi-quote" data-i18n="testi1.quote">"NovaSphere-მა პირველსავე თვეს 42%-ით შეგვიმცირა AWS-ის ხარჯი და უპრობლემოდ გაუძლო შავი პარასკევის 3x დატვირთვას ინჟინრების ჩარევის გარეშე."</p>
             <div class="testi-author">
-              <div class="author-avatar purple-bg">ერ</div>
+              <div class="author-avatar purple-bg">ER</div>
               <div>
-                <div class="author-name">ელენა როსტოვა</div>
-                <div class="author-role">VP of Engineering, Vortex AI</div>
+                <div class="author-name" data-i18n="testi1.name">ელენა როსტოვა</div>
+                <div class="author-role" data-i18n="testi1.role">VP of Engineering, Vortex AI</div>
               </div>
             </div>
           </div>
 
           <div class="testi-card glass-card">
             <div class="stars">★★★★★</div>
-            <p class="testi-quote">"კვანტურმა ფარმა მყისიერად დაბლოკა zero-day DDoS შეტევა, რომელიც ჩვენს ფინტექ პლატფორმას გაათიშავდა. სისტემამ ინვესტიცია 100-ჯერ გაამართლა."</p>
+            <p class="testi-quote" data-i18n="testi2.quote">"კვანტურმა ფარმა მყისიერად დაბლოკა zero-day DDoS შეტევა, რომელიც ჩვენს ფინტექ პლატფორმას გაათიშავდა. სისტემამ ინვესტიცია 100-ჯერ გაამართლა."</p>
             <div class="testi-author">
-              <div class="author-avatar cyan-bg">მჩ</div>
+              <div class="author-avatar cyan-bg">MC</div>
               <div>
-                <div class="author-name">მარკუს ჩენი</div>
-                <div class="author-role">CISO, Quantum Pay</div>
+                <div class="author-name" data-i18n="testi2.name">მარკუს ჩენი</div>
+                <div class="author-role" data-i18n="testi2.role">CISO, Quantum Pay</div>
               </div>
             </div>
           </div>
@@ -380,39 +394,39 @@
       <div class="container cta-container glass-card glow-border">
         <div class="cta-grid">
           <div class="cta-info">
-            <h2 class="cta-title">მზად ხართ გამოსცადოთ <span class="gradient-text">ავტონომიური AI</span> ინფრასტრუქტურა?</h2>
-            <p class="cta-desc">მიიღეთ მყისიერი წვდომა $1,000 უფასო სატესტო კრედიტზე. საკრედიტო ბარათი არ მოითხოვება. გაშვებას სჭირდება 60 წამი.</p>
+            <h2 class="cta-title" data-i18n="cta.title">მზად ხართ გამოსცადოთ <span class="gradient-text">ავტონომიური AI</span> ინფრასტრუქტურა?</h2>
+            <p class="cta-desc" data-i18n="cta.desc">მიიღეთ მყისიერი წვდომა $1,000 უფასო სატესტო კრედიტზე. საკრედიტო ბარათი არ მოითხოვება. გაშვებას სჭირდება 60 წამი.</p>
             
             <div class="cta-perks">
-              <span>⚡ 60-წამიანი მყისიერი გაშვება</span>
-              <span>🔒 SOC2 დაშიფვრა და დაცვა</span>
-              <span>💬 24/7 მხარდაჭერა</span>
+              <span data-i18n="cta.perk1">⚡ 60-წამიანი მყისიერი გაშვება</span>
+              <span data-i18n="cta.perk2">🔒 SOC2 დაშიფვრა და დაცვა</span>
+              <span data-i18n="cta.perk3">💬 24/7 მხარდაჭერა</span>
             </div>
           </div>
 
           <div class="cta-form-container glass-panel">
             <form id="contact-form" class="contact-form">
-              <h3 class="form-title">სანდბოქსის გაშვება</h3>
+              <h3 class="form-title" data-i18n="form.title">სანდბოქსის გაშვება</h3>
               <div class="form-group">
-                <label for="full-name">სახელი და გვარი</label>
-                <input type="text" id="full-name" required placeholder="ალექსი მერცერი" class="form-input">
+                <label for="full-name" data-i18n="form.name.label">სახელი და გვარი</label>
+                <input type="text" id="full-name" required placeholder="ალექსი მერცერი" data-i18n-placeholder="form.name.placeholder" class="form-input">
               </div>
               <div class="form-group">
-                <label for="work-email">სამუშაო ელფოსტა</label>
+                <label for="work-email" data-i18n="form.email.label">სამუშაო ელფოსტა</label>
                 <input type="email" id="work-email" required placeholder="alex@enterprise.ge" class="form-input">
               </div>
               <div class="form-group">
-                <label for="selected-tier">არჩეული ტარიფი</label>
+                <label for="selected-tier" data-i18n="form.tier.label">არჩეული ტარიფი</label>
                 <select id="selected-tier" class="form-input">
-                  <option value="Enterprise Pro">Enterprise Pro (სატესტო)</option>
-                  <option value="Developer">Developer პაკეტი</option>
-                  <option value="Sovereign">Sovereign Cluster</option>
+                  <option value="Enterprise Pro" data-i18n="form.tier.opt1">Enterprise Pro (სატესტო)</option>
+                  <option value="Developer" data-i18n="form.tier.opt2">Developer პაკეტი</option>
+                  <option value="Sovereign" data-i18n="form.tier.opt3">Sovereign Cluster</option>
                 </select>
               </div>
-              <button type="submit" class="btn btn-primary btn-lg w-full glow-effect" id="submit-btn">
+              <button type="submit" class="btn btn-primary btn-lg w-full glow-effect" id="submit-btn" data-i18n="form.submit">
                 უფასო კრედიტის მიღება <span class="arrow">→</span>
               </button>
-              <p class="form-disclaimer">ღილაკზე დაჭერით თქვენ ეთანხმებით მომსახურების წესებსა და პირობებს.</p>
+              <p class="form-disclaimer" data-i18n="form.disclaimer">ღილაკზე დაჭერით თქვენ ეთანხმებით მომსახურების წესებსა და პირობებს.</p>
             </form>
           </div>
         </div>
@@ -427,7 +441,7 @@
         <a href="#" class="brand-logo">
           <span class="logo-text">Nova<span class="highlight">Sphere</span></span>
         </a>
-        <p class="footer-tagline">ავტონომიური AI ინფრასტრუქტურა შექმნილი მომავალი საუკუნის გამოთვლებისთვის.</p>
+        <p class="footer-tagline" data-i18n="footer.tagline">ავტონომიური AI ინფრასტრუქტურა შექმნილი მომავალი საუკუნის გამოთვლებისთვის.</p>
         <div class="social-links">
           <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a>
           <a href="#" aria-label="GitHub"><svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
@@ -436,32 +450,32 @@
       </div>
 
       <div class="footer-links-group">
-        <h4>პროდუქტი</h4>
-        <a href="#features">ნეირონული ქსელი</a>
-        <a href="#analytics">კიბერ-ფარი</a>
-        <a href="#pricing">ტარიფები</a>
-        <a href="#">განახლებები</a>
+        <h4 data-i18n="footer.prod">პროდუქტი</h4>
+        <a href="#features" data-i18n="footer.prod1">ნეირონული ქსელი</a>
+        <a href="#analytics" data-i18n="footer.prod2">კიბერ-ფარი</a>
+        <a href="#pricing" data-i18n="footer.prod3">ტარიფები</a>
+        <a href="#" data-i18n="footer.prod4">განახლებები</a>
       </div>
 
       <div class="footer-links-group">
-        <h4>კომპანია</h4>
-        <a href="#">ჩვენ შესახებ</a>
-        <a href="#">კარიერა</a>
-        <a href="#">პრეს-კიტი</a>
-        <a href="#">კონტაქტი</a>
+        <h4 data-i18n="footer.comp">კომპანია</h4>
+        <a href="#" data-i18n="footer.comp1">ჩვენ შესახებ</a>
+        <a href="#" data-i18n="footer.comp2">კარიერა</a>
+        <a href="#" data-i18n="footer.comp3">პრეს-კიტი</a>
+        <a href="#" data-i18n="footer.comp4">კონტაქტი</a>
       </div>
 
       <div class="footer-links-group">
-        <h4>იურიდიული</h4>
-        <a href="#">კონფიდენციალურობა</a>
-        <a href="#">წესები და პირობები</a>
-        <a href="#">უსაფრთხოების SLA</a>
-        <a href="#">SOC2 შესაბამისობა</a>
+        <h4 data-i18n="footer.legal">იურიდიული</h4>
+        <a href="#" data-i18n="footer.legal1">კონფიდენციალურობა</a>
+        <a href="#" data-i18n="footer.legal2">წესები და პირობები</a>
+        <a href="#" data-i18n="footer.legal3">უსაფრთხოების SLA</a>
+        <a href="#" data-i18n="footer.legal4">SOC2 შესაბამისობა</a>
       </div>
     </div>
     <div class="container footer-bottom">
-      <p>© 2026 NovaSphere Systems Inc. ყველა უფლება დაცულია.</p>
-      <div class="status-pill">
+      <p data-i18n="footer.copy">© 2026 NovaSphere Systems Inc. ყველა უფლება დაცულია.</p>
+      <div class="status-pill" data-i18n="footer.status">
         <span class="dot green"></span> ყველა სისტემა მუშაობს
       </div>
     </div>
@@ -469,7 +483,7 @@
 
   <!-- Toast Notification -->
   <div id="toast" class="toast hidden">
-    <span id="toast-message">🎉 უფასო სატესტო გარემო გააქტიურდა! შეამოწმეთ ელფოსტა.</span>
+    <span id="toast-message" data-i18n="toast.success">🎉 უფასო სატესტო გარემო გააქტიურდა! შეამოწმეთ ელფოსტა.</span>
   </div>
 
 </body>

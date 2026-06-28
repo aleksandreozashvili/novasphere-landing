@@ -1,8 +1,12 @@
 // ==========================================================================
 // NovaSphere Interactive Logic — Main Module
 // ==========================================================================
+import { translations } from './translations.js';
+
+let currentLang = localStorage.getItem('ns_lang') || 'ka';
 
 document.addEventListener('DOMContentLoaded', () => {
+  initLanguageSwitcher();
   initMobileMenu();
   initHeaderScroll();
   initCounters();
@@ -184,7 +188,8 @@ function initContactForm() {
     const origText = btn.innerHTML;
 
     btn.disabled = true;
-    btn.innerHTML = `მუშავდება... ⏳`;
+    const loadingText = translations[currentLang]?.['form.btn.loading'] || `მუშავდება... ⏳`;
+    btn.innerHTML = loadingText;
 
     setTimeout(() => {
       btn.disabled = false;
@@ -205,4 +210,53 @@ function showToast() {
   setTimeout(() => {
     toast.classList.add('hidden');
   }, 5000);
+}
+
+// Language Switcher & Localization Logic
+function initLanguageSwitcher() {
+  const langBtns = document.querySelectorAll('.lang-btn');
+  
+  // Apply saved or initial language
+  setLanguage(currentLang);
+
+  langBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const selectedLang = btn.getAttribute('data-lang');
+      if (selectedLang && selectedLang !== currentLang) {
+        setLanguage(selectedLang);
+      }
+    });
+  });
+}
+
+function setLanguage(lang) {
+  if (!translations[lang]) return;
+  currentLang = lang;
+  localStorage.setItem('ns_lang', lang);
+  document.documentElement.lang = lang;
+
+  // Update active buttons
+  document.querySelectorAll('.lang-btn').forEach(btn => {
+    if (btn.getAttribute('data-lang') === lang) {
+      btn.classList.add('active');
+    } else {
+      btn.classList.remove('active');
+    }
+  });
+
+  // Update text elements
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    if (translations[lang][key]) {
+      el.innerHTML = translations[lang][key];
+    }
+  });
+
+  // Update placeholders
+  document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+    const key = el.getAttribute('data-i18n-placeholder');
+    if (translations[lang][key]) {
+      el.setAttribute('placeholder', translations[lang][key]);
+    }
+  });
 }
